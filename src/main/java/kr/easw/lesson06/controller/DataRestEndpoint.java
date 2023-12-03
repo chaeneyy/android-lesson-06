@@ -26,6 +26,7 @@ public class DataRestEndpoint {
     // 이 메서드의 엔드포인트를 /api/v1/data/list로 설정합니다. GET만 허용됩니다.
     @GetMapping("/list")
     public List<TextDataDto> listText() {
+        System.out.println("Mapping Success");
         return textDataService.listText();
     }
 }
